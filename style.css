@@ -30,12 +30,12 @@ a{
 
 /* LOGO TORNEO MORTAL */
 .logo__index{
-    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     width: 650px;
+    margin-right: 35px;
 }
 .logo{
     filter:contrast(1);
@@ -44,7 +44,7 @@ a{
 }
 .logo__index img:hover{
     filter:contrast(1.5);
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 0.7s;
 /*     background-color:rgba(22, 22, 22, 0.349) ;
     box-shadow: 10px 10px 5px 800px rgba(22, 22, 22, 0.349); */
