@@ -71,7 +71,7 @@ a{
 }
 
 /* HOME */
-.home_body{
+/* .home_body{
     background-color: rgb(5, 5, 5);
     background-size: 80%;
 }
@@ -80,16 +80,14 @@ a{
     align-items: center;
     justify-content: center;
     display: flex;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     margin-top: 4px;
 }
 .arcade_container img{
-    max-width: 900px;
-    max-height: 950px;
-}
-.arcade_img{
-
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
 }
 .video{
     margin-left: -9px;
@@ -97,9 +95,13 @@ a{
     position: absolute;
     width: 400px;
     height: 300px;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 50px;
 }
 .arcade_img_container{
+    width: 900px;
+    height: 960px;
 
 }
 .logo_arcade{
@@ -140,6 +142,124 @@ a{
 i{
     color:#f5deb3;
     margin: 11px;
+}
+i:hover{
+    color:#ff866e;
+}
+.logo__torneo__mortal:hover{
+    filter:contrast(1.5);
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+@media screen and (max-width:1366px){
+    .arcade_img_container{
+        width: 590px;
+        height: 0%;
+    }
+    .video {
+        margin: -35px 0px 0px -4px;
+        top: 235px;
+        position: absolute;
+        width: 280px;
+        height: 200px;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 50px;
+    }
+        .redes_container {
+            flex-direction: row;
+            position: fixed;
+            width: 235px;
+            color: #f5deb3;
+            font-size: 28px;
+            margin: 0px 0px -80px 148px;
+    }
+    i{
+        color:#f5deb3;
+        margin: 7.5px;
+    }
+} */
+
+.home_body{
+    background-image: url(./img/torneo\ mortal\ background\ logo.png);
+    background-size: 100%;
+    max-width: 100%;
+}
+.felx_container_arcade{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+}
+.arcade_container{
+    background-image: url(./img/arcade\ front.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    max-width: 950px;
+    height: 965px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.video_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video{
+    width: 360px;
+    height: 253px;
+    border-radius: 25px;
+}
+.logo__torneo__mortal{
+    filter:contrast(1);
+    transform: scale(1);
+    transition: 0.7s;
+}
+.logo_arcade{
+    width: 320px;
+    max-width: 100%;
+}
+
+.texto_container{
+    width: 25%;
+}
+.texto_arcade{
+    font-family: 'Koulen', cursive;
+    text-align: center;
+    color: wheat;
+    font-size: 65px;
+    max-width: 100%;
+    max-height: 100%;
+    line-height: 50px;
+}
+.font_2{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.redes_container{
+    flex-direction:row;
+    width: 400px;
+    color:#f5deb3;
+    font-size: 35px;
+    bottom: 217px;
+    margin: 84px 186px 23px 175px;
+    text-align: end;
+}
+
+i{
+    color:#f5deb3;
+    margin: 10px;
 }
 i:hover{
     color:#ff866e;
