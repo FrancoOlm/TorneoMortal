@@ -71,120 +71,10 @@ a{
 }
 
 /* HOME */
-/* .home_body{
-    background-color: rgb(5, 5, 5);
-    background-size: 80%;
-}
-
-.arcade_container{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    max-width: 100%;
-    max-height: 100%;
-    margin-top: 4px;
-}
-.arcade_container img{
-    display: flex;
-    max-width: 100%;
-    max-height: 100%;
-}
-.video{
-    margin-left: -9px;
-    top: 288px;
-    position: absolute;
-    width: 400px;
-    height: 300px;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 50px;
-}
-.arcade_img_container{
-    width: 900px;
-    height: 960px;
-
-}
-.logo_arcade{
-    width: 320px;
-}
-.logo__torneo__mortal{
-    filter:contrast(1);
-    transform: scale(1);
-    transition: 0.7s;
-}
-.texto_container{
-    margin-top: 27px;
-}
-.texto_arcade{
-    font-family: 'Koulen', cursive;
-    text-align: center;
-    color: wheat;
-    width: 320px;
-    height: 88px;
-    font-size: 65px;
-}
-.font_2{
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    font-size: 40px;
-}
-.redes_container{
-    flex-direction:row;
-    position: absolute;
-    width: 400px;
-    color:#f5deb3;
-    font-size: 40px;
-    bottom: 217px;
-    margin: 0 auto;
-    margin-left: 276px;
-}
-
-i{
-    color:#f5deb3;
-    margin: 11px;
-}
-i:hover{
-    color:#ff866e;
-}
-.logo__torneo__mortal:hover{
-    filter:contrast(1.5);
-    transform: scale(1.05);
-    transition: 0.7s;
-}
-@media screen and (max-width:1366px){
-    .arcade_img_container{
-        width: 590px;
-        height: 0%;
-    }
-    .video {
-        margin: -35px 0px 0px -4px;
-        top: 235px;
-        position: absolute;
-        width: 280px;
-        height: 200px;
-        max-width: 100%;
-        max-height: 100%;
-        border-radius: 50px;
-    }
-        .redes_container {
-            flex-direction: row;
-            position: fixed;
-            width: 235px;
-            color: #f5deb3;
-            font-size: 28px;
-            margin: 0px 0px -80px 148px;
-    }
-    i{
-        color:#f5deb3;
-        margin: 7.5px;
-    }
-} */
-
 .home_body{
     background-image: url(./img/torneo\ mortal\ background\ logo.png);
     background-size: 100%;
     max-width: 100%;
-
 }
 .felx_container_arcade{
     display: flex;
@@ -270,7 +160,7 @@ i:hover{
     transform: scale(1.05);
     transition: 0.7s;
 }
-
+/* RESPONSIVE */
 @media screen and (max-width:1366px){
     .arcade_container {
         background-image: url(./img/arcade\ front.png);
@@ -284,7 +174,8 @@ i:hover{
         justify-content: center;
         align-items: center;
     }
-    @media screen and (max-width:1024px){
+}
+@media screen and (max-width:1024px){
         .logo__torneo__mortal {
             width: 560px;
             padding: 10px;
@@ -314,8 +205,6 @@ i:hover{
         height: 214px;
         border-radius: 25px;
     }
-    
-    
 }
 @media screen and (max-width:768px){
     .felx_container_arcade{
@@ -327,10 +216,36 @@ i:hover{
         width: 41%;
         border: solid 4px bisque;
     }
-    
-
 }
-
+@media screen and (max-width:425px){
+    .arcade_container {
+        background-size: 550px;
+        width: 425px;
+    }
+    .texto_container {
+        margin-top: 32px;
+        padding: 18px;
+        width: 300px;
+        border: solid 4px bisque;
+    }
+    .video {
+        width: 270px;
+        height: 195px;
+        border-radius: 25px;
+    }
+    .redes_container {
+        flex-direction: row;
+        width: 400px;
+        color: #f5deb3;
+        font-size: 23px;
+        bottom: 217px;
+        margin: 56px 254px 24px 108px;
+        text-align: end;
+    }
+    i {
+        margin: 0px -3px 13px 20px;
+    }
+}
 @media screen and (max-width:320px){
     .arcade_container {
         background-image: url(./img/arcade\ front.png);
@@ -344,7 +259,6 @@ i:hover{
         height: 146px;
         border-radius: 25px;
     }
-
     .redes_container {
         flex-direction: row;
         width: 400px;
@@ -365,3 +279,4 @@ i:hover{
         border: solid 4px bisque;
     }
 }
+
